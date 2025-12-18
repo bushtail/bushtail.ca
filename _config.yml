@@ -13,7 +13,7 @@ title                    : "bushtail"
 title_separator          : "-"
 name                     : &name "bushtail"
 description              : &description "bushtail's modding den"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://bushtail.ca # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : "https://bushtail.ca" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bushtail/bushtail.ca"
