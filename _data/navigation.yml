@@ -8,26 +8,15 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "SPT Mods"
+    url: /spt-mods/
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "Mystery of the Malign Mods"
+    url: /motm-mods/
 
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
+  - title: "Other Mods"
+    url: /other-mods/
+
     
   # - title: "CV"
   #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/
