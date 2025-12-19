@@ -83,11 +83,11 @@ author:
   zhihu            : # Username
 
 mod_category:
-  spt-mods:
+  spt:
     title: 'SPT Mods'
-  motm-mods:
+  motm:
     title: 'Mystery of the Malign Mods'
-  other-mods:
+  other:
     title: 'Other Mods'
 
 # Site Settings
