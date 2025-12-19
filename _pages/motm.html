@@ -1,0 +1,25 @@
+---
+layout: archive
+title: "MotM Mods"
+permalink: /motm/
+author_profile: true
+---
+
+{% if site.mod_category %}
+    {% for category in site.mod_category %}
+        {% assign title_shown = false %}
+        {% for mod in site.mods reversed %}
+            {% if mod.categories contains category[0] %}
+                {% unless title_shown %}
+                    <h2>{{ category[1].title }}</h2><hr />
+                    {% assign title_shown = true %}
+                {% endunless %}
+                {% include archive-single.html %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% else %}
+    {% for mod in site.mods reversed %}
+        {% include archive-single.html %}
+    {% endfor %}
+{% endif %}
