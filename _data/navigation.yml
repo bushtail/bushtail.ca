@@ -9,13 +9,13 @@
 
 main:
   - title: "SPT Mods"
-    url: /spt-mods/
+    url: /spt/
 
   - title: "Mystery of the Malign Mods"
-    url: /motm-mods/
+    url: /motm/
 
   - title: "Other Mods"
-    url: /other-mods/
+    url: /other/
 
     
   # - title: "CV"
