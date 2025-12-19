@@ -41,7 +41,7 @@ author:
   orcid            : # URL
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : #URL
+  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
@@ -57,7 +57,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          :  # Replace this with you Bluesky username
+  bluesky          : # Username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -67,14 +67,14 @@ author:
   instagram        : # Username
   lastfm           : # Username
   linkedin         : # Username
-  mastodon         : # URL
-  medium           : # URL
+  mastodon         : # Username
+  medium           : # Username
   pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username
-  telegram         : # URL
+  telegram         : # Username
   tumblr           : # Username
-  twitter          : # Username for X / Twitter
+  twitter          : # Username
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
