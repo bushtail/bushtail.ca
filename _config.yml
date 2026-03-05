@@ -25,11 +25,11 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "bushtail"
-  pronouns         : # example: "she/her"  
+  pronouns         : "he/him"
   bio              : "SPT mod dev, Unity mod dev, madman."
   location         : "Ontario, Canada"
   employer         : # No employer
-  uri              : # URL
+  uri              : "bushtail.ca"
   email            : "bushtail@bushtail.ca"
 
   # Academic websites
