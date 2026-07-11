@@ -1,34 +1,34 @@
 ﻿/* ==========================================================================
-   DEFAULT THEME - LIGHT VERSION (IntelliJ Classic Light)
+   DEFAULT THEME - LIGHT VERSION (IntelliJ Classic Light, fully patched)
    ========================================================================== */
 
 /* Core IntelliJ Light colors */
-$primary-color              : #2979ff;   // JetBrains blue accent
-$gray                       : #4e4e4e;   // Secondary text
-$dark-gray                  : #d0d0d0;   // Borders
-$darker-gray                : #bcbcbc;   // Highlights
+$primary-color              : #2979ff;
+$gray                       : #4e4e4e;
+$dark-gray                  : #d0d0d0;
+$darker-gray                : #bcbcbc;
 $light-gray                 : mix(#fff, $gray, 70%);
 
 /* Backgrounds */
-$background                 : #ffffff;   // Main background
-$footer                     : #f2f2f2;   // Footer background
-$background-light           : #f7f7f7;   // Editor background
-$background-lighter         : #e6e6e6;   // Table headers / subtle highlight
+$background                 : #ffffff;
+$footer                     : #f2f2f2;
+$background-light           : #f7f7f7;
+$background-lighter         : #e6e6e6;
 
 /* Text + links */
-$text                       : #000000;   // Primary text
-$link                       : #2979ff;   // JetBrains blue
+$text                       : #000000;
+$link                       : #2979ff;
 $link-dark                  : mix(#000, $link, 25%);
 $link-light                 : mix(#fff, $link, 25%);
 
-/* Status colors (IntelliJ-inspired) */
+/* Status colors */
 $danger-color               : #d32f2f;
 $info-color                 : #1976d2;
 $notice-color               : #4e4e4e;
 $success-color              : #388e3c;
 $warning-color              : #f9a825;
 
-/* Other basic settings */
+/* Other settings */
 $border-radius              : 4px;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.15);
 $global-transition          : all 0.2s ease-in-out;
@@ -51,10 +51,26 @@ $sidebar-screen-min-width   : 1024px;
   --global-link-color                 : #{$link};
   --global-link-color-hover           : #{$link-dark};
   --global-link-color-visited         : #{$link-light};
-  --global-masthead-bg-color          : #{$footer};
-  --global-masthead-link-color        : #000000;
+
+  /* FIXED: masthead contrast */
+  --global-masthead-bg-color          : #{$footer};      /* light gray header */
+  --global-masthead-link-color        : #000000;         /* dark icons */
   --global-masthead-link-color-hover  : #{$primary-color};
+
   --global-text-color                 : #000000;
   --global-text-color-light           : #4e4e4e;
   --global-thead-color                : #{$background-lighter};
+
+  /* FIXED: global icon color */
+  --global-icon-color                 : #000000;
+}
+
+/* FIXED: force all icons to use global icon color */
+.theme-icon,
+.theme-toggle svg,
+.masthead__menu-item svg,
+.footer__icon svg,
+.page__meta svg,
+.page__taxonomy svg {
+  fill: var(--global-icon-color) !important;
 }
