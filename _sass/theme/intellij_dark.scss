@@ -56,4 +56,13 @@ html[data-theme="dark"] {
     --global-text-color                 : #{$text};
     --global-text-color-light           : #c8d0d9;
     --global-thead-color                : #{$background-lighter};
+    --global-icon-color: #e6e6e6;
+}
+
+html {
+    --global-icon-color: #c0c0c0;
+}
+
+.theme-toggle svg {
+    fill: var(--global-icon-color) !important;
 }
