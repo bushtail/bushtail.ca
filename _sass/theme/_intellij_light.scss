@@ -1,0 +1,59 @@
+﻿/* ==========================================================================
+   DEFAULT THEME - LIGHT VERSION (IntelliJ Classic Light)
+   ========================================================================== */
+
+/* Core IntelliJ Light colors */
+$primary-color              : #2979ff;   // JetBrains blue accent
+$gray                       : #4e4e4e;   // Secondary text
+$dark-gray                  : #d0d0d0;   // Borders
+$darker-gray                : #bcbcbc;   // Highlights
+$light-gray                 : mix(#fff, $gray, 70%);
+
+/* Backgrounds */
+$background                 : #ffffff;   // Main background
+$footer                     : #f2f2f2;   // Footer background
+$background-light           : #f7f7f7;   // Editor background
+$background-lighter         : #e6e6e6;   // Table headers / subtle highlight
+
+/* Text + links */
+$text                       : #000000;   // Primary text
+$link                       : #2979ff;   // JetBrains blue
+$link-dark                  : mix(#000, $link, 25%);
+$link-light                 : mix(#fff, $link, 25%);
+
+/* Status colors (IntelliJ-inspired) */
+$danger-color               : #d32f2f;
+$info-color                 : #1976d2;
+$notice-color               : #4e4e4e;
+$success-color              : #388e3c;
+$warning-color              : #f9a825;
+
+/* Other basic settings */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.15);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* IntelliJ Light theme variables */
+:root {
+  --global-base-color                 : #{$primary-color};
+  --global-bg-color                   : #{$background};
+  --global-footer-bg-color            : #{$footer};
+  --global-border-color               : #{$dark-gray};
+  --global-dark-border-color          : #{$background-light};
+  --global-code-background-color      : #f7f7f7;
+  --global-code-text-color            : #000000;
+  --global-fig-caption-color          : #{$gray};
+  --global-link-color                 : #{$link};
+  --global-link-color-hover           : #{$link-dark};
+  --global-link-color-visited         : #{$link-light};
+  --global-masthead-link-color        : #000000;
+  --global-masthead-link-color-hover  : #{$primary-color};
+  --global-text-color                 : #000000;
+  --global-text-color-light           : #4e4e4e;
+  --global-thead-color                : #{$background-lighter};
+}

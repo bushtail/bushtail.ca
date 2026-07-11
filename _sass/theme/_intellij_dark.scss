@@ -1,0 +1,59 @@
+﻿/* ==========================================================================
+   DEFAULT THEME - DARK VERSION (JetBrains Darcula)
+   ========================================================================== */
+
+/* Core Darcula colors */
+$primary-color              : #589df6;   // JetBrains blue accent
+$gray                       : #a9b7c6;   // Darcula text gray
+$dark-gray                  : #3c3f41;   // Darcula border gray
+$darker-gray                : #323232;   // Darcula highlight gray
+$light-gray                 : mix(#fff, $gray, 50%);
+
+/* Backgrounds */
+$background                 : #2b2b2b;   // Darcula main background
+$footer                     : #323232;   // Footer matches highlight gray
+$background-light           : #3c3f41;   // Slightly lighter panel background
+$background-lighter         : #4e5254;   // Even lighter for table headers
+
+/* Text + links */
+$text                       : #a9b7c6;   // Darcula foreground text
+$link                       : #589df6;   // JetBrains blue
+$link-dark                  : mix(#000, $link, 25%);
+$link-light                 : mix(#fff, $link, 25%);
+
+/* Status colors (JetBrains‑inspired) */
+$danger-color               : #ff6b68;
+$info-color                 : #3592c4;
+$notice-color               : #a9b7c6;
+$success-color              : #62c462;
+$warning-color              : #f0c849;
+
+/* Other basic settings */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.25);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Darcula theme variables */
+html[data-theme="dark"] {
+    --global-base-color                 : #{$primary-color};
+    --global-bg-color                   : #{$background};
+    --global-footer-bg-color            : #{$footer};
+    --global-border-color               : #{$dark-gray};
+    --global-dark-border-color          : #{$background-light};
+    --global-code-background-color      : #2b2b2b;
+    --global-code-text-color            : #{$text};
+    --global-fig-caption-color          : #{$light-gray};
+    --global-link-color                 : #{$link};
+    --global-link-color-hover           : #{$link-dark};
+    --global-link-color-visited         : #{$link-light};
+    --global-masthead-link-color        : #{$text};
+    --global-masthead-link-color-hover  : #{$primary-color};
+    --global-text-color                 : #{$text};
+    --global-text-color-light           : #c8d0d9;
+    --global-thead-color                : #{$background-lighter};
+}
