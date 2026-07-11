@@ -1,19 +1,19 @@
 ﻿/* ==========================================================================
-   DEFAULT THEME - DARK VERSION (JetBrains Darcula)
+   DEFAULT THEME - DARK VERSION (JetBrains Darcula, readjusted)
    ========================================================================== */
 
 /* Core Darcula colors */
 $primary-color              : #589df6;   // JetBrains blue accent
 $gray                       : #a9b7c6;   // Darcula text gray
-$dark-gray                  : #3c3f41;   // Darcula border gray
-$darker-gray                : #323232;   // Darcula highlight gray
+$dark-gray                  : #3c3f41;   // Panel/border gray
+$darker-gray                : #323232;   // Highlight gray
 $light-gray                 : mix(#fff, $gray, 50%);
 
-/* Backgrounds */
-$background                 : #2b2b2b;   // Darcula main background
-$footer                     : #323232;   // Footer matches highlight gray
-$background-light           : #3c3f41;   // Slightly lighter panel background
-$background-lighter         : #4e5254;   // Even lighter for table headers
+/* Backgrounds (readjusted to avoid darkest tone) */
+$background                 : #3c3f41;   // JetBrains panel background (lighter)
+$footer                     : #323232;   // Footer highlight
+$background-light           : #4e5254;   // Header/table background
+$background-lighter         : #5c6163;   // Table header highlight
 
 /* Text + links */
 $text                       : #a9b7c6;   // Darcula foreground text
@@ -41,11 +41,11 @@ $sidebar-screen-min-width   : 1024px;
 /* Darcula theme variables */
 html[data-theme="dark"] {
     --global-base-color                 : #{$primary-color};
-    --global-bg-color                   : #{$background};
+    --global-bg-color                   : #{$background};          // now #3c3f41
     --global-footer-bg-color            : #{$footer};
     --global-border-color               : #{$dark-gray};
     --global-dark-border-color          : #{$background-light};
-    --global-code-background-color      : #2b2b2b;
+    --global-code-background-color      : #2b2b2b;                 // editor stays dark
     --global-code-text-color            : #{$text};
     --global-fig-caption-color          : #{$light-gray};
     --global-link-color                 : #{$link};
