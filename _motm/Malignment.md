@@ -23,16 +23,15 @@ It's source code, licensed under MIT, can be downloaded or forked [here](https:/
 ### Showcase
 
 <details>
-    <summary>Images</summary>
+  <summary>Images</summary>
 
-    ![in-game](https://images.steamusercontent.com/ugc/9393276894854032793/B7E0D86B1EDA27106A251F1D076826B2A91506D9/)
+  <img src="https://images.steamusercontent.com/ugc/9393276894854032793/B7E0D86B1EDA27106A251F1D076826B2A91506D9/" alt="in-game">
 
-    ![pause menu](https://images.steamusercontent.com/ugc/16934478597865031238/686D17D460922D0000D3A0CE6F866F20B8409107/)
+  <img src="https://images.steamusercontent.com/ugc/16934478597865031238/686D17D460922D0000D3A0CE6F866F20B8409107/" alt="pause menu">
 
-    ![clue menu](https://images.steamusercontent.com/ugc/14412350897118531156/E0C553AFC808B16663AE3B98D08C7B462ABB78D5/)
+  <img src="https://images.steamusercontent.com/ugc/14412350897118531156/E0C553AFC808B16663AE3B98D08C7B462ABB78D5/" alt="clue menu">
 
-    ![witness menu](https://images.steamusercontent.com/ugc/10411314006810952873/459A4EEF4EBA869BF5FFCE426B67A7CAB285148B/)
-
+  <img src="https://images.steamusercontent.com/ugc/10411314006810952873/459A4EEF4EBA869BF5FFCE426B67A7CAB285148B/" alt="witness menu">
 </details>
 
 ### Backend
