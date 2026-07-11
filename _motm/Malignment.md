@@ -3,7 +3,7 @@ title: "Malignment"
 collection: motm
 excerpt: Unlocking resolution and aspect ratio changing in Mystery of the Malign.
 date: 2025-11-21
-teaser: https://images.steamusercontent.com/ugc/9393276894854032793/B7E0D86B1EDA27106A251F1D076826B2A91506D9/
+teaser: /images/malignment_teaser.jpg
 ---
 
 Unlocking resolution and aspect ratio changing in Mystery of the Malign.
