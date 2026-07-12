@@ -1,7 +1,7 @@
 ﻿/* ==========================================================================
-   INTELLIJ LIGHT THEME - LIGHT VERSION
+   INTELLIJ LIGHT
    ========================================================================== */
-/* Color codes used for the theme */
+
 $primary-color              : #0033b3;
 $dark-primary-color         : mix(#000, $primary-color, 40%);
 $darker-primary-color       : mix(#000, $primary-color, 60%);
@@ -19,14 +19,12 @@ $footer                     : #f2f2f2;
 $border                     : #e8e8e8;
 $border-light               : #d9d9d9;
 
-/* Color codes used for the site */
 $danger-color                : #d63333;
 $info-color                  : #389fd6;
 $notice-color                : #808080;
 $success-color                : #499c54;
 $warning-color                : #cc7000;
 
-/* Other basic settings for the template */
 $border-radius               : 4px;
 $box-shadow                  : 0 1px 1px rgba(0, 0, 0, 0.125);
 $global-transition           : all 0.2s ease-in-out;
@@ -36,7 +34,6 @@ $navicon-height                : 4px;
 $sidebar-link-max-width         : 250px;
 $sidebar-screen-min-width       : 1024px;
 
-/* Light theme for the site */
 :root {
   --global-base-color                 : #{$primary-color};
   --global-bg-color                   : #{$background};
@@ -56,7 +53,6 @@ $sidebar-screen-min-width       : 1024px;
   --global-thead-color                : #{$background-lighter};
 }
 
-/* Footer styling for light mode */
 :root {
   footer {
     color: #{$text};
