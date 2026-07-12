@@ -59,8 +59,13 @@ html[data-theme="dark"] {
 }
 
 html[data-theme="dark"] {
-    .masthead,
-    .masthead__inner-wrap {
+    .masthead {
         background-color: #{$footer};
+    }
+}
+
+html[data-theme="dark"] {
+    .greedy-nav {
+        background: #{$footer};
     }
 }
