@@ -38,12 +38,18 @@
     "layout/json_cv"
 ;
 
+.page,
 .page__inner-wrap,
 .page__content {
-    max-width: 100% !important;
+    max-width: none !important;
     width: 100% !important;
-    padding-left: 2rem;
-    padding-right: 2rem;
+}
+
+.page {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
 }
 
 .layout--page,
@@ -61,8 +67,4 @@
     padding: 2rem;
     background: var(--global-bg-color);
     border-left: 1px solid var(--global-border-color);
-}
-
-.page {
-    margin-right: 320px !important;
 }
