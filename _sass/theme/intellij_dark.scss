@@ -2,37 +2,41 @@
     DARCULA THEME
     ========================================================================== */
 
-$primary-color              : #cc7832;
-$gray                       : #808080;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
+$primary-color               : #cc7832;
+$gray                        : #808080;
+$dark-gray                   : mix(#000, $gray, 40%);
+$darker-gray                 : mix(#000, $gray, 60%);
+$light-gray                  : mix(#fff, $gray, 50%);
 
-$content-bg                 : #3b3b3b;
-$chrome-bg                  : #3c3f41;
-$chrome-bg-lighter          : #4e5254;
+$content-bg                  : #3b3b3b;
+$chrome-bg                   : #3c3f41;
+$chrome-bg-lighter           : #4e5254;
 
-$background                 : $content-bg;
-$text                       : #a9b7c6;
-$link                       : $primary-color;
-$link-dark                  : mix(#000, $link, 25%);
-$link-light                 : mix(#fff, $link, 25%);
+$background                  : $content-bg;
+$text                        : #a9b7c6;
+$link                        : $primary-color;
+$link-dark                   : mix(#000, $link, 25%);
+$link-light                  : mix(#fff, $link, 25%);
 
-$danger-color               : #ff6b68;
-$info-color                 : #3672a4;
-$notice-color               : $gray;
-$success-color              : #6a8759;
-$warning-color              : #ffc66d;
+$danger-color                : #ff6b68;
+$info-color                  : #3672a4;
+$notice-color                : $gray;
+$success-color               : #6a8759;
+$warning-color               : #ffc66d;
 
-$border-radius              : 4px;
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
-$global-transition          : all 0.2s ease-in-out;
-$masthead-height            : 70px;
-$navicon-width              : 28px;
-$navicon-height             : 4px;
-$sidebar-link-max-width     : 250px;
-$sidebar-screen-min-width   : 1024px;
+$border-radius                : 4px;
+$box-shadow                   : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition            : all 0.2s ease-in-out;
+$masthead-height               : 70px;
+$navicon-width                 : 28px;
+$navicon-height                : 4px;
+$sidebar-link-max-width        : 250px;
+$sidebar-screen-min-width      : 1024px;
 
+/* Darcula is a fixed dark IDE palette, so it's applied to BOTH toggle
+   states — otherwise clicking the moon icon would drop back to the
+   theme's built-in light mode. */
+:root,
 html[data-theme="dark"] {
     --global-base-color                 : #{$primary-color};
     --global-bg-color                   : #{$content-bg};
@@ -51,22 +55,9 @@ html[data-theme="dark"] {
     --global-text-color-light           : #999999;
     --global-thead-color                : #{$chrome-bg-lighter};
 
-    .masthead {
-        background-color: #{$chrome-bg};
-    }
-
-    .page__footer {
-        background-color: #{$chrome-bg};
-    }
-
-    .sidebar {
-        background-color: #{$chrome-bg};
-        border-radius: #{$border-radius};
-        padding: 1em;
-    }
-
+    .masthead      { background-color: #{$chrome-bg}; }
+    .page__footer  { background-color: #{$chrome-bg}; }
+    .sidebar        { background-color: #{$chrome-bg}; border-radius: #{$border-radius}; padding: 1em; }
     .page__content,
-    .archive {
-        background-color: #{$content-bg};
-    }
+    .archive        { background-color: #{$content-bg}; }
 }
