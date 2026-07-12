@@ -11,4 +11,3 @@ author_profile: true
 {% for post in site.spt reversed %}
   {% include archive-single.html %}
 {% endfor %}
-
