@@ -1,36 +1,31 @@
 ﻿/* ==========================================================================
-   DEFAULT THEME - DARK VERSION (JetBrains Darcula, fully patched)
-   ========================================================================== */
+    DARCULA THEME
+    ========================================================================== */
 
-/* Core Darcula colors */
-$primary-color              : #589df6;
-$gray                       : #a9b7c6;
-$dark-gray                  : #3c3f41;
-$darker-gray                : #323232;
+$primary-color              : #cc7832;
+$gray                       : #808080;
+$dark-gray                  : mix(#000, $gray, 40%);
+$darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 
-/* Backgrounds */
-$background                 : #3c3f41;
-$footer                     : #323232;
-$background-light           : #4e5254;
-$background-lighter         : #5c6163;
+$content-bg                 : #3b3b3b;
+$chrome-bg                  : #3c3f41;
+$chrome-bg-lighter          : #4e5254;
 
-/* Text + links */
+$background                 : $content-bg;
 $text                       : #a9b7c6;
-$link                       : #589df6;
+$link                       : $primary-color;
 $link-dark                  : mix(#000, $link, 25%);
 $link-light                 : mix(#fff, $link, 25%);
 
-/* Status colors */
 $danger-color               : #ff6b68;
-$info-color                 : #3592c4;
-$notice-color               : #a9b7c6;
-$success-color              : #62c462;
-$warning-color              : #f0c849;
+$info-color                 : #3672a4;
+$notice-color               : $gray;
+$success-color              : #6a8759;
+$warning-color              : #ffc66d;
 
-/* Other settings */
 $border-radius              : 4px;
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.25);
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
 $global-transition          : all 0.2s ease-in-out;
 $masthead-height            : 70px;
 $navicon-width              : 28px;
@@ -38,39 +33,40 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Darcula theme variables */
-html[data-theme="dark"] {
+html[data-theme="darcula"] {
     --global-base-color                 : #{$primary-color};
-    --global-bg-color                   : #{$background};
-    --global-footer-bg-color            : #{$footer};
-    --global-border-color               : #{$dark-gray};
-    --global-dark-border-color          : #{$background-light};
-    --global-code-background-color      : #2b2b2b;
+    --global-bg-color                   : #{$content-bg};
+    --global-footer-bg-color            : #{$chrome-bg};
+    --global-border-color               : #{$light-gray};
+    --global-dark-border-color          : #{$chrome-bg-lighter};
+    --global-code-background-color      : #1e1e1e;
     --global-code-text-color            : #{$text};
     --global-fig-caption-color          : #{$light-gray};
     --global-link-color                 : #{$link};
     --global-link-color-hover           : #{$link-dark};
     --global-link-color-visited         : #{$link-light};
-
-    /* FIXED: masthead contrast */
-    --global-masthead-bg-color          : #{$darker-gray};   /* darker header */
-    --global-masthead-link-color        : #e6e6e6;           /* bright icons */
+    --global-masthead-link-color        : #{$text};
     --global-masthead-link-color-hover  : #{$primary-color};
-
     --global-text-color                 : #{$text};
-    --global-text-color-light           : #c8d0d9;
-    --global-thead-color                : #{$background-lighter};
+    --global-text-color-light           : #999999;
+    --global-thead-color                : #{$chrome-bg-lighter};
 
-    /* FIXED: global icon color */
-    --global-icon-color                 : #e6e6e6;
-}
+    .masthead {
+        background-color: #{$chrome-bg};
+    }
 
-/* FIXED: force all icons to use global icon color */
-.theme-icon,
-.theme-toggle svg,
-.masthead__menu-item svg,
-.footer__icon svg,
-.page__meta svg,
-.page__taxonomy svg {
-    fill: var(--global-icon-color) !important;
+    .page__footer {
+        background-color: #{$chrome-bg};
+    }
+
+    .sidebar {
+        background-color: #{$chrome-bg};
+        border-radius: #{$border-radius};
+        padding: 1em;
+    }
+
+    .page__content,
+    .archive {
+        background-color: #{$content-bg};
+    }
 }
