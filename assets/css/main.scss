@@ -37,3 +37,19 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+#main {
+    max-width: 100%;
+}
+
+.page {
+    width: 100%;
+}
+
+.page__inner-wrap {
+    max-width: none;
+}
+
+.archive {
+    max-width: none;
+}
