@@ -68,3 +68,8 @@
     background: var(--global-bg-color);
     border-left: 1px solid var(--global-border-color);
 }
+
+.page__inner-wrap {
+    flex: 1 1 auto !important;
+    padding: 2rem;
+}
