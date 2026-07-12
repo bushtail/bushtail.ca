@@ -59,7 +59,8 @@ html[data-theme="dark"] {
 }
 
 html[data-theme="dark"] {
-    masthead {
+    .masthead,
+    .masthead__inner-wrap {
         background-color: #{$footer};
     }
 }
