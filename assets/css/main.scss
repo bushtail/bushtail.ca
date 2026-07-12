@@ -121,18 +121,17 @@
     float: left !important;
 }
 
-.greedy-nav .visible-links {
+.greedy-nav.expanded .visible-links {
     display: flex !important;
     align-items: center;
     width: 100%;
 }
 
-.masthead__menu-spacer {
-    display: block !important;
+.greedy-nav.expanded .masthead__menu-spacer {
     flex-grow: 1 !important;
 }
 
-.masthead__menu-item {
+.greedy-nav.expanded .masthead__menu-item {
     display: flex !important;
     align-items: center;
 }
