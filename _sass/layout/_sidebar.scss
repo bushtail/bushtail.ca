@@ -144,8 +144,6 @@
   display: table-cell;
   vertical-align: top;
   width: 36px;
-  // set width only, for non-square avatars
-  // height: 36px;
 
   @include breakpoint($large) {
     display: block;
@@ -155,13 +153,27 @@
 
   img {
     max-width: 175px;
-    border-radius: 0%;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     object-fit: cover;
+    position: relative;
+    z-index: 1;
 
     @include breakpoint($large) {
       padding: 5px;
-      border: 1px solid var(--global-border-color);
+    }
+  }
+
+  @include breakpoint($large) {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: -3px;
+      background: var(--global-border-color);
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+      z-index: 0;
     }
   }
 }
