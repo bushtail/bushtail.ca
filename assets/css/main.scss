@@ -42,29 +42,24 @@
 .page__content {
     max-width: 100% !important;
     width: 100% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-.sidebar {
-    padding: 2rem 2.5rem !important;   /* adjust to taste */
-}
-
-.sidebar__inner {
-    padding: 0 !important;
-}
-
-@media (min-width: 1024px) {
-    .sidebar {
-        max-width: 320px;
-    }
-
-    .page {
-        margin-left: 320px;
-    }
-}
-
-.page {
-    padding-left: 2rem;
+    padding-left: 2rem;     /* optional: keep readable margins */
     padding-right: 2rem;
+}
+
+/* Sidebar pinned to the right edge */
+.sidebar {
+    position: fixed !important;
+    right: 0 !important;
+    top: 0;
+    height: 100vh;          /* full-height sidebar */
+    overflow-y: auto;       /* scroll if needed */
+    width: 320px;           /* adjust to taste */
+    padding: 2rem;          /* comfortable spacing */
+    background: var(--global-bg-color); /* matches your theme */
+    border-left: 1px solid var(--global-border-color);
+}
+
+/* Prevent content from sitting underneath the sidebar */
+.page {
+    margin-right: 320px !important; /* match sidebar width */
 }
