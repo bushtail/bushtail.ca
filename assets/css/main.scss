@@ -108,7 +108,9 @@
     padding-left: 15px !important;
 }
 
-
+.masthead__menu-spacer {
+    width: calc(100% - 100px);
+}
 
 .page__footer footer {
     max-width: none !important;
@@ -119,9 +121,4 @@
 
 .archive {
     float: left !important;
-}
-
-.masthead__menu-spacer {
-    width: calc(100vw - 600px);
-    max-width: 100%;
 }
