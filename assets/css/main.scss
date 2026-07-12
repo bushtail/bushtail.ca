@@ -121,6 +121,11 @@
     float: left !important;
 }
 
+.greedy-nav.expanded {
+    display: flex !important;
+    width: 100%;
+}
+
 .greedy-nav.expanded .visible-links {
     display: flex !important;
     align-items: center;
