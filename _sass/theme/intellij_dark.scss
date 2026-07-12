@@ -33,7 +33,7 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-html[data-theme="darcula"] {
+html[data-theme="dark"] {
     --global-base-color                 : #{$primary-color};
     --global-bg-color                   : #{$content-bg};
     --global-footer-bg-color            : #{$chrome-bg};
