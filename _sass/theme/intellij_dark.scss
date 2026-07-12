@@ -71,3 +71,9 @@ html[data-theme="dark"] {
         background: #{$footer};
     }
 }
+
+html[data-theme="dark"] {
+    .sidebar {
+        background: #{$footer};
+    }
+}
