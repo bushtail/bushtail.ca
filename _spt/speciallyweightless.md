@@ -1,6 +1,6 @@
 ---
 title: "Specially Weightless"
 collection: spt
-excerpt: Make UNTAR Fun Again
+excerpt: Weightless Special Items
 date: 2025-12-18
 ---
