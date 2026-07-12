@@ -121,22 +121,7 @@
     float: left !important;
 }
 
-.greedy-nav.expanded {
-    display: flex !important;
-    width: 100%;
-}
-
-.greedy-nav.expanded .visible-links {
-    display: flex !important;
-    align-items: center;
-    width: 100%;
-}
-
-.greedy-nav.expanded .masthead__menu-spacer {
-    flex-grow: 1 !important;
-}
-
-.greedy-nav.expanded .masthead__menu-item {
-    display: flex !important;
-    align-items: center;
+.masthead__menu-spacer {
+    width: calc(100vw - 600px);
+    max-width: 100%;
 }
