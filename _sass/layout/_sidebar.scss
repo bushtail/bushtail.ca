@@ -155,7 +155,9 @@
 
   img {
     max-width: 175px;
-    border-radius: 50%;
+    border-radius: 0%;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    object-fit: cover;
 
     @include breakpoint($large) {
       padding: 5px;
