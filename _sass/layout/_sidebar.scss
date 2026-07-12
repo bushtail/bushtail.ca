@@ -143,38 +143,48 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 36px;
+  width: 175px;
+  aspect-ratio: 1;
+
+  /* Hexagon */
+  clip-path: polygon(
+          25% 6.7%,
+          75% 6.7%,
+          100% 50%,
+          75% 93.3%,
+          25% 93.3%,
+          0% 50%
+  );
+  -webkit-clip-path: polygon(
+          25% 6.7%,
+          75% 6.7%,
+          100% 50%,
+          75% 93.3%,
+          25% 93.3%,
+          0% 50%
+  );
+
+  overflow: hidden;
+  background: var(--global-border-color);
+  padding: 3px;               // thickness of border
 
   @include breakpoint($large) {
     display: block;
-    width: auto;
-    height: auto;
   }
 
   img {
-    max-width: 175px;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    position: relative;
-    z-index: 1;
 
-    @include breakpoint($large) {
-      padding: 5px;
-    }
-  }
+    /* Same hexagon so the padding becomes a border */
+    clip-path: inherit;
+    -webkit-clip-path: inherit;
 
-  @include breakpoint($large) {
-    position: relative;
-    display: inline-block;
-
-    &::before {
-      content: "";
-      position: absolute;
-      inset: -3px;
-      background: var(--global-border-color);
-      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-      z-index: 0;
-    }
+    border-radius: 0;
+    padding: 0;
+    border: none;
   }
 }
 
