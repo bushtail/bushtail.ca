@@ -67,7 +67,7 @@
 }
 
 .page {
-    margin-left: 320px !important;   /* <<< THIS FIXES YOUR ISSUE */
+    margin-left: 320px !important;
 }
 
 .page__inner-wrap {
@@ -88,7 +88,7 @@
 }
 
 .masthead,
-.masthead .wrap {
+.masthead__inner-wrap {
     max-width: none !important;
     width: 100% !important;
     margin: 0 !important;
