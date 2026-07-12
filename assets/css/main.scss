@@ -37,3 +37,34 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+.page__inner-wrap,
+.page__content {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.sidebar {
+    padding: 2rem 2.5rem !important;   /* adjust to taste */
+}
+
+.sidebar__inner {
+    padding: 0 !important;
+}
+
+@media (min-width: 1024px) {
+    .sidebar {
+        max-width: 320px;
+    }
+
+    .page {
+        margin-left: 320px;
+    }
+}
+
+.page {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
