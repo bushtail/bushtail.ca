@@ -108,6 +108,11 @@
     padding-left: 15px !important;
 }
 
+.masthead__menu-spacer {
+    display: block !important;
+    flex-grow: 1 !important;
+}
+
 .page__footer footer {
     max-width: none !important;
     width: 100% !important;
@@ -117,15 +122,4 @@
 
 .archive {
     float: left !important;
-}
-
-li#theme-toggle {
-    display: flex !important;
-    margin-left: auto !important;
-}
-
-li#theme-toggle a {
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
 }
