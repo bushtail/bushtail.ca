@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "bushtail.ca"
+title: "bushtail's modding den"
 author_profile: true
 redirect_from:
   - /about/
